@@ -1,0 +1,3 @@
+#!/bin/sh
+
+urxvt -bg black -fg gray -title "Terminal" $@
