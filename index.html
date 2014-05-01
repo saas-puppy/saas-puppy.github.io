@@ -1,145 +1,189 @@
 <!doctype html>
 <html>
 <head>
-  <title>saas-puppy - minimal ruby-on-rails development environment</title>
+  <title>SaasPuppy - Minimal RubyOnRails Development Environment</title>
   <style>
-    #content-div { margin-left: 5em   ; margin-right: 5em ; }
-    h3 , h4      { text-align: center ; }
+    #content-div  { margin-left: 5em   ; margin-right: 5em ; }
+    h3 , h4       { text-align: center ; }
+    .nav-table    { width: 100% ; }
+    .nav-table tr { text-align: center ; }
+#flash-img { width: 16px ; height: 16px ; }
   </style>
 </head>
 
 
 <body>
 
+<table class="nav-table">
+  <tr>
+    <td><a href="#home">Home</a></td>
+    <td><a href="#about">About</a></td>
+    <td><a href="#release">Notes</a></td>
+    <td><a href="#files">Download</a></td>
+    <td><a href="https://github.com/saas-puppy/saas-puppy/issues">Issues</a></td>
+    <td><a href="http://puppylinux.org/wikka/License">License</a></td>
+  </tr>
+</table>
+
 <div id="content-div">
 
-  <h3 id="title-h3">saas-puppy - minimal ruby-on-rails development environment</h3>
+  <h3 id="title-h3">SaasPuppy - Minimal RubyOnRails Development Environment</h3>
 
   <div id="summary-div">
 
-    <h4 class="heading-h4">summary</h4>
+    <h4 class="heading-h4"><a nohref id="home">Summary</a></h4>
 
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;this LiveCD of PuppyLinux was baked fresh for the edX CS169 online course on RubyOnRails to atttenuate the initial learning curve for new students who typically have little or no prior experience with virtual machines or *nix environments
+      &nbsp;&nbsp;&nbsp;&nbsp;This LiveCD of PuppyLinux was baked fresh for the edX.org CS169 online course on RubyOnRails to atttenuate the initial learning curve for new students who typically have little to no prior experience with virtual machines or *nix environments.
     </p>
 
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;saas-puppy is by no means a new distro - the course software requirements are minimal - the base image is currently raringpuppy 3.9.9.2 and its devpack with ruby 1.9.3 , rails 3.2.16 , and heroku 3.6 pre-installed
+      &nbsp;&nbsp;&nbsp;&nbsp;SaasPuppy is by no means a new distro. The course software requirements are minimal. The base image is currently RaringPuppy 3.9.9.2 and its Devpack (needed for compiling RubyGems). The course requirements (Ruby 1.9.3 , Rails 3.2.16 , and Heroku 3.6) were then baked in for flavor. That's all folks!
     </p>
 
-    <h4 class="heading-h4">motivation</h4>
+    <h4 class="heading-h4"><a nohref id="about">Motivation</a></h4>
 
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;the current VM image of the full ubuntu precise is far overkill for the purpose of learning rails and at nearly 2GB this unfortunately excludes many students with slow internet connections - even those with sufficient bandwidth typically download it with their web-browser ending up with incomplete or corrupted downloads and must attempt multiple times
-    </p>
-
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;once the download is successful the student must then learn how to setup the VM host properly with the added complication that the image file is wrapped in a tarball which many popular archive tools do not extract properly - these obstacles prompt many students to attempt setting up their own rails environment with little or no experience making it much more difficult for the TAs to diagnose their problems that will inevitably arise
+      &nbsp;&nbsp;&nbsp;&nbsp;The current course VM image of the full Ubuntu Precise is far overkill for the purpose of learning Rails; and at nearly 2GB, this unfortunately excludes many students with slow internet connections. Even those with sufficient bandwidth typically download it with their web-browser; ending up with incomplete or corrupted downloads and must attempt multiple times.
     </p>
 
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;the result is that typically the bulk of the issues that the TAs must address for the first few weeks are these mostly avoidable errors with downloading , extraction , installation , configuration , and compatibility which are frustrating to students , time-consuming for the TAs to diagnose , and quite outside the scope of the course subject matter - this saas-puppy LiveCD project aims to remedy most of these common issues
+      &nbsp;&nbsp;&nbsp;&nbsp;Once the download is successful the student must then install and learn how to configure the VM host properly; with the added complication that the image file is wrapped in a tarball which many popular archive tools do not extract properly. These obstacles prompt many students to attempt setting up their own rails environment with little or no experience; making it much more difficult for the TAs to diagnose their troubles that will inevitably arise.
+    </p>
+
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;The result is that typically the bulk of the issues that the TAs must address for the first few weeks are these mostly avoidable errors with downloading , extraction , installation , configuration , and compatibility; which are frustrating to students , time-consuming for the TAs to diagnose , and quite outside the scope of the course subject matter. This SaasPuppy LiveCD project aims to remedy most of these common issues.
     </p>
   </div>
 
   <div id="notes-div">
-    <h4 class="heading-h4">release notes for v0.1</h4>
+    <h4 class="heading-h4"><a nohref id="release">Release Notes</a></h4>
+
+    <h5 class="heading-h5">v0.1:</h5>
 
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;this initial version features a full graphical desktop environment (jwn) and includes everything required to complete the course as well as countless everyday applications you'd expect in an OS (web browsers , text editors , media players , word processor , image editor , screen capture/recording , you name it its in there) - some of these may be removed in the future in order to make the download even smaller but for now you get the full monte - it is based on PrecisePuppyLinux which is a minified (puppified) version of ubuntu precise with full access to the ubuntu repos so you can add any other package you may want (firefox , skype , whatever)
+      &nbsp;&nbsp;&nbsp;&nbsp;This initial version features a full graphical desktop environment (jwn) and includes everything required to complete the course as well as countless everyday applications you'd expect in an OS (web browsers , text editors , media players , word processor , image editor , screen capture/recording , you name it its in there). Some of these may be removed in the future in order to make the download smaller; but for now you get the "Full Monte". It is based on PrecisePuppyLinux; which is a minified (puppified) version of Ubuntu Precise 12.04 with full access to the Ubuntu repos so you can add any other packages that you may desire (Firefox , Skype , whatever).
     </p>
 
-    <p>the packages that have been added to the base image are:
+    <p>The packages that have been added to the base image are:
       <ul>
         <li>ruby 1.9.3</li>
         <li>rails 3.2.16</li>
         <li>heroku 3.6</li>
+        <li>lxterminal 0.1.11</li> <!-- n/a v0.2 -->
         <li>nano 2.2.6</li>
       </ul>
     </p>
 
-    <p>the package that have been removed from the base image are:
+    <p>The package that have been removed from the base image are:
       <ul>
         <li>none</li>
       </ul>
     </p>
+
+    <p>Other modifications:
+      <ul>
+        <li>Updated Puppy and Ubuntu repository indicies</li>
+        <li>Updated ca-certificates (for github)</li>
+        <li>Cloned rottenpotatoes course project skeleton</li>
+        <li>Changed desktop color scheme to dark theme</li> <!-- n/a v0.2 -->
+<!-- v0.2
+        <li>customized terminal color scheme to gray on black</li>
+        <li>customized colored bash prompt with git branch status</li>
+-->
+      </ul>
+    </p>
+
+    <p>DISCLAIMER: This is the initial evaluation version and should be considered private beta for now; intended only for short-term educational use by students of the edX CS169 course. SaasPuppy carries the same copyright (<a href="http://bkhome.org/bkauler/">Barry Kauler</a>) and <a href="http://puppylinux.org/wikka/License">licensing terms</a> (LGPL) as <a href="http://puppylinux.org/wikka/Raring?redirect=no">Upup Raring 3.9.9.2</a><!-- <a href="http://puppylinux.org/wikka/PuppyPrecise?redirect=no">Precise Puppy 5.7.1</a> v0.2 -->; as only <a href="http://www.ubuntu.com">Ubuntu</a> debs and <a href="https://rubygems.org/">RubyGems</a> gems have been added to the base PuppyLinux distribution. This version contains some proprietary binary software (such as
+
+<img id="flash-img" src="http://blog.vivisectingmedia.com/wp-content/uploads/2007/10/rune_flash.gif" alt=" (image: http://blog.vivisectingmedia.com/wp-content/uploads/2007/10/rune_flash.gif) "><a href="http://www.adobe.com/">Adobe Flash Player</a>
+
+) which will be removed from SaasPuppy soon. Of course, students may always add this back in if it is desired. As with any free software; no warrantee is expressed nor implied. Use at your own risk. That being said, PuppLinux has been around since 2005 and is one of the top 10 GNU+Linux distros according to distrowatch.com.  It is super fast and is known to run on PC's as slow as 0.6 GHz and with as little as 256MB RAM.
+    </p>
+    <p>
+      If you encounter any problems running or installing SaasPuppy or if you have any comments or suggestions for improvements; please don't hesitate to post them to the project <a href="https://github.com/saas-puppy/saas-puppy/issues">issue tracker</a> on github.
+    </p>
   </div>
 
   <div id="links-div">
-    <h4 class="heading-h4">files</h4>
+    <h4 class="heading-h4"><a nohref id="files">Files</a></h4>
 
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;this LiveCD is generously hosted for us gratis thanks to mark at puppyisos.org and jason at silverdollarsolutions.com - please try the bittorrent first and keep it running after it completes if you can - this should give you the fastest download and the best chance at a complete uncorrupted file on the first try - keeping it running as long as you can afterward will help others to download it faster - also with bittorrent you can stop mid-way and resume at a later time without losing the bits you already have - the torrent should be available 24/7 but if for some reason it is not you may use the direct link instead although it may be slower than the torrent
+      &nbsp;&nbsp;&nbsp;&nbsp;This LiveCD is generously hosted for us gratis thanks to Mark at the <a href="http://www.dotpups.de">PuppyISOs and DotPups</a> repositories and Jason at <a href="http://silverdollarsolutions.com">Silver Dollar Solutions</a>. Please try the bittorrent first and keep it running after it completes, if you can. This should give you the fastest download and the best chance at a complete uncorrupted file on the first try. Keeping it running for as long as you can afterward will help others to download it faster. Also, with bittorrent you can stop mid-way and resume at a later time without losing the bits that you already have acquired. The torrent is web-sseded; and so should be available at all times; but if, for some reason it is not, you may use the direct link instead; although it may be slower than the torrent.
     </p>
 
-    <p>IMPORTANT: check for errors when completed<br />
+    <p>IMPORTANT: Check for errors when completed.<br />
       <ul>
-        <li>bittorrent download:<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;if you use a proper bittorrent client please re-scan the file when completed to ensure there were no errors<br />&nbsp;
+        <li>Bittorrent Download:<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;Manual error checking is unnecessary.  This is the most robust method. If you wish, you can re-scan the file when completed using your bittorrent client and/or verify the md5 checksum as noted below.<br />&nbsp;
         </li>
 
-        <li>bitlet download:<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;if you do not have a bittorrent client there is a java based option below that will download in a popup window but you must keep it open to complete - if you do close it before it finishes that is ok - it will also resume where you left off when you retrun and click the link again but the bitlet applet does not appear to allow you to scan the file for errors - please verify the md5 checksum instead<br />&nbsp;
-        </li>
-
-        <li>direct download:<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;if you must use the direct download link please verify the md5 checksum when completed to ensure there were no errors
+        <li>Direct Download:<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;If you must use the direct download link, please verify the md5 checksum when completed to ensure that there were no errors.
+          <ul>
+            <li>Linux: Most distros have the `md5sum` command line utility pre-installed.</li>
+            <li>Windows: You will need to install a checksum utility (<a href="http://www.winmd5.com/" target="_blank">winmd5</a>for example).</li>
+            <li>Apple: Use the `md5` command line utility.</li>
+          </ul>
         </li>
       </ul>
     </p>
 
-    <p>NOTE: the bittorrent links are not yet available</p>
-
     <table id="links-table">
       <tr>
-        <td>bittorrent:</td>
+        <td>Bittorrent:</td>
         <td><a id="torrent-a"></a></td>
-        <td>(usa web-seeded - try this first if you have a bittorrent client)</td>
-      </tr>
-      <tr>
-        <td>bitlet:</td>
-        <td><a id="bitlet-a"></a></td>
-        <td>(usa web-seeded - try this first if you do not have a bittorrent client - java required)</td>
+        <td>(USA web-seeded - Try this first if you have a bittorrent client)</td>
       </tr>
       <tr>
         <td>http:</td>
         <td><a id="direct-a"></a></td>
-        <td>(european backup server - direct link - username:puppy password:linux)</td>
+        <td>(European backup server - Direct link - username:puppy password:linux)</td>
       </tr>
       <tr>
-        <td>md5sum:</td>
+        <td>Md5sum:</td>
         <td><a id="md5sum-a"></a></td>
-        <td>(please check this if you downloaded direct - username:puppy password:linux)</td>
+        <td>(Please check this if you downloaded direct)</td>
       </tr>
     </table>
   </div>
 
 </div>
 
+<p></p>
+
+<table class="nav-table">
+  <tr>
+    <td><a href="#home">Home</a></td>
+    <td><a href="#about">About</a></td>
+    <td><a href="#release">Notes</a></td>
+    <td><a href="#files">Download</a></td>
+    <td><a href="https://github.com/saas-puppy/saas-puppy/issues">Issues</a></td>
+    <td><a href="http://puppylinux.org/wikka/License">License</a></td>
+  </tr>
+</table>
+
 
 <script src="http://www.bitlet.org/javascripts/BitLet.js" type="text/javascript"></script>
 
 <script type="text/javascript">
+
   var DIRECT_URL    = "http://puppyisos.org/isos/saas-puppy/" ;
-  var BITLET_URL    = "http://www.bitlet.org?torrent=" ;
   var ISO_FILE      = "saas-puppy-0.1.iso" ;
   var TORRENT_FILE  = ISO_FILE + ".torrent" ;
-  var MD5SUM_FILE   = "md5sum" ; // "md5sum.txt" ;
+  var MD5SUM_FILE   = "md5sum.txt" ;
 
   var TorrentA       = document.getElementById('torrent-a') ;
-  var BitletA        = document.getElementById('bitlet-a') ;
   var DirectA        = document.getElementById('direct-a') ;
   var Md5SumA        = document.getElementById('md5sum-a') ;
   TorrentA.href      =              TORRENT_FILE ;
   TorrentA.innerHTML =              TORRENT_FILE ;
-  BitletA.href       = BITLET_URL + TORRENT_FILE ;
-  BitletA.innerHTML  =              TORRENT_FILE ;
   DirectA.href       = DIRECT_URL + ISO_FILE ;
   DirectA.innerHTML  =              ISO_FILE ;
-  Md5SumA.href       = DIRECT_URL + MD5SUM_FILE ;
+//  Md5SumA.href       = DIRECT_URL + MD5SUM_FILE ;
+  Md5SumA.href       =              MD5SUM_FILE ;
   Md5SumA.innerHTML  =              MD5SUM_FILE ;
-  BitletA.onclick    = function() { return BitLet.openDownloadFromAnchor(this) ; } ;
-//  BitletA.href       = BITLET_URL + escape(TORRENT_URL + TORRENT_FILE).replace(/\//g , '%2F') ;
+
 </script>
 
 </body></html>
