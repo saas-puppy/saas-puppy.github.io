@@ -1,0 +1,19 @@
+
+body               { background-color: #222      ; color:        #ddd  ; }
+a                  { text-decoration:  none      ; color:        #46d  ; }
+a:link , a:visited { font-weight:      bold      ; color:        #46d  ; }
+a:hover            { border:           1px solid ; font-weight:  bold  ; }
+a:active           { background-color: #008      ; }
+.operator          { color:            #0d0      ; }
+#content-div       { margin-left:      5em       ; margin-right: 5em   ; }
+#title-div         { height:           160px     ; }
+#title-h3          { text-align:       right     ; }
+#logo-img          { width:            160px     ; height:       160px ; float:left ; }
+.heading-h4        { text-align:       center    ; }
+.heading-h4 a      { color:            #ddd      ; }
+.nav-frame         { width:            100%      ; height:       48px  ; border: 0px ; }
+.nav-table         { width:            100%      ; }
+.nav-table tr      { text-align:       center    ; }
+
+/* TODO: */
+#flash-img { width: 16px ; height: 16px ; }
