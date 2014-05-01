@@ -1,6 +1,6 @@
 this directory contains files to be used as an alternative development environment in the form of a LiveCD for students of the CS169 online course on edX
 
-this is by no measure a new distro - the base image is currently PrecisePuppy 5.7.1 and its devpack with ruby 1.9.3 , rails 3.2.16 , and heroku 3.6 pre-installed
+SaasPuppy is by no measure a new distro - the base image is currently Raring Puppy 9.2.2 and its devpack with ruby 1.9.3 , rails 3.2.16 , and heroku 3.6 pre-installed
 
 
 contents:
@@ -20,7 +20,7 @@ contents:
 ./saas-puppy-logo.png
   => logo graphic
 
-./saas-puppy-0.1.iso
+./saas-puppy-0.1.iso (n/a in github repo)
   => LiveCD image derrived from raring-3.9.9.2-SCSI.iso
        http://puppylinux.org/wikka/raring
 
@@ -29,3 +29,12 @@ contents:
 
 ./saas-puppy-0.1.iso.torrent
   => bittorrent seed for LiveCD image
+
+./scripts
+  => support scripts for re-baking the LiveCD image
+
+./scripts/.bashrc
+  => customizations for prompt , default editor , and aliases
+
+./scripts/rxvt
+  => overrides urxvt terminal default color scheme kludgedly (never used)

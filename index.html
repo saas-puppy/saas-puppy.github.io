@@ -26,7 +26,7 @@
     </p>
 
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;SaasPuppy is by no means a new distribution. The course software requirements are minimal. The base image is currently Precise Puppy 5.7.1 and its Devpack (needed for compiling RubyGems). The course requirements (Ruby 1.9.3 , Rails 3.2.16 , and Heroku 3.6) were then baked in for flavor. That's all folks!<span class="operator"> " }</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;SaasPuppy is by no measure a new distribution. The course software requirements are minimal. The base image is currently Raring Puppy 3.9.9.2<!-- v0.2 Precise Puppy 5.7.1 -->and its Devpack (needed for compiling RubyGems). The course requirements (Ruby 1.9.3 , Rails 3.2.16 , and Heroku 3.6) were then baked in for flavor. That's all folks!<span class="operator"> " }</span>
     </p>
 
 <p>&nbsp;</p>
@@ -54,7 +54,7 @@
     <h4 class="version-h4">v0.1:</h5>
 
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;This version of SaasPuppy features a full graphical desktop environment (currently <a href="http://joewing.net/projects/jwm/">JWM</a>) and includes everything required to complete the <a href="https://www.edx.org/course/uc-berkeleyx/uc-berkeleyx-cs169-1x-engineering-1377">edX CS169</a> course; as will all future versions. This initial version additionally includes countless everyday applications you'd expect in an OS (web browsers , text editors , media players , word processor , image editor , screen capture/recording , and much more). Many of these non-essentials may be removed in the future in order to further reduce the download size; but for now you get the "Full Monte". For compatibility with the course VM image, it is based on Precise Puppy Linux; which is a minified (puppified) version of Ubuntu Precise 12.04 with full access to the Ubuntu repositories so you can add any other packages that you may desire (Firefox , Skype , whatever).
+      &nbsp;&nbsp;&nbsp;&nbsp;This version of SaasPuppy features a full graphical desktop environment (currently <a href="http://joewing.net/projects/jwm/">JWM</a>) and includes everything required to complete the <a href="https://www.edx.org/course/uc-berkeleyx/uc-berkeleyx-cs169-1x-engineering-1377">edX CS169</a> course; as will all future versions. This initial version additionally includes countless everyday applications you'd expect in an OS (web browsers , text editors , media players , word processor , image editor , screen capture/recording , and much more). Many of these non-essentials may be removed in the future in order to further reduce the download size; but for now you get the "Full Monte". For compatibility with the course VM image, it is based on Raring<!-- v0.2 Precise -->Puppy Linux; which is a minified (puppified) version of Ubuntu Precise 12.04 with full access to the Ubuntu repositories so you can add any other packages that you may desire (Firefox , Skype , whatever).
     </p>
 
     <p>The packages that have been added to the base image are:
@@ -62,6 +62,7 @@
         <li>ruby 1.9.3</li>
         <li>rails 3.2.16</li>
         <li>heroku 3.6</li>
+        <li>lxterminal 0.1.11</li> <!-- n/a v0.2 -->
         <li>nano 2.2.6</li>
       </ul>
     </p>
@@ -77,12 +78,15 @@
         <li>Updated Puppy and Ubuntu repository indices</li>
         <li>Updated ca-certificates (for github)</li>
         <li>Cloned rottenpotatoes course project skeleton</li>
+        <li>Changed desktop color scheme to dark theme</li> <!-- n/a v0.2 -->
+<!-- v0.2
         <li>customized terminal color scheme to gray on black</li>
         <li>customized colored bash prompt with git branch status</li>
+-->
       </ul>
     </p>
 
-    <p>DISCLAIMER: This is the initial evaluation version and should be considered private beta for now; intended only for short-term educational use by students of the <a href="https://www.edx.org/course/uc-berkeleyx/uc-berkeleyx-cs169-1x-engineering-1377">edX CS169</a> course. SaasPuppy carries the same copyright (<a href="http://bkhome.org/bkauler/">Barry Kauler</a>) and <a href="http://puppylinux.org/wikka/License">licensing terms</a> (<a href="http://www.gnu.org/licenses/lgpl-3.0.txt">LGPL</a>) as <a href="http://puppylinux.org/wikka/PuppyPrecise?redirect=no">Precise Puppy 5.7.1</a>; as only <a href="http://www.ubuntu.com">Ubuntu</a> debs and <a href="https://rubygems.org/">RubyGems</a> gems have been added to the base PuppyLinux distribution.
+    <p>DISCLAIMER: This is an initial evaluation version and should be considered private beta for now; intended only for short-term educational use by students of the <a href="https://www.edx.org/course/uc-berkeleyx/uc-berkeleyx-cs169-1x-engineering-1377">edX CS169</a> course. SaasPuppy carries the same copyright (<a href="http://bkhome.org/bkauler/">Barry Kauler</a>) and <a href="http://puppylinux.org/wikka/License">licensing terms</a> (<a href="http://www.gnu.org/licenses/lgpl-3.0.txt">LGPL</a>) as <a href="http://puppylinux.org/wikka/Raring?redirect=no">Raring Puppy 3.9.9.2</a><!-- v0.2 <a href="http://puppylinux.org/wikka/PuppyPrecise?redirect=no">Precise Puppy 5.7.1</a> v0.2 -->; as only <a href="http://www.ubuntu.com">Ubuntu</a> debs and <a href="https://rubygems.org/">RubyGems</a> gems have been added to the base PuppyLinux distribution.
 
 This version contains some proprietary binary software (such as
 <img id="flash-img" src="http://blog.vivisectingmedia.com/wp-content/uploads/2007/10/rune_flash.gif" alt=" (image: http://blog.vivisectingmedia.com/wp-content/uploads/2007/10/rune_flash.gif) "><a href="http://www.adobe.com/">Adobe Flash Player</a>) which will be removed from SaasPuppy soon along with other non-essentials. Of course, students may always add back anything that is desired; but the primary goal is to make this development environment as small as possible and simple to use.
@@ -145,7 +149,7 @@ This version contains some proprietary binary software (such as
     <h4 class="heading-h4"><a nohref id="setup"><span class="operator">{ </span>Installation<span class="operator"> => "</span></a></h4>
 
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;No installation is necessary. You just burn the image to CD/DVD and reboot. You can also install to a USB stick or to your Hard Disk 'frugally' (using <a href="http://unetbootin.sourceforge.net/">UNnetBootIn</a>) for an extra speed boost. Using the USB option or a CD-RW/DVD-RW, your computer system will not be modified in any way. You literally do not need a Hard Disk for this method; and as an extra benefit, you can take all of your files and the entire operating system with you to use on anyone else's computer; and their computer will not be modified in any way either.<span class="operator"> " }</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;No installation is necessary. You just burn the image to CD/DVD then reboot. You can also install to a USB stick or to your Hard Disk 'frugally' (using <a href="http://unetbootin.sourceforge.net/">UNnetBootIn</a>) for an extra speed boost. Using the USB option or a DVD-RW in multi-session mode, your computer system will not be modified in any way. You literally do not need a Hard Disk for these methods; and as an extra benefit, you can take all of your files and the entire operating system with you to use on anyone else's computer; and their computer will not be modified in any way either.<span class="operator"> " }</span>
     </p>
   </div>
 
