@@ -26,7 +26,7 @@
     </p>
 
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;SaasPuppy is by no measure a new distribution. The course software requirements are minimal. The base image is currently Raring Puppy 3.9.9.2<!-- v0.2 Precise Puppy 5.7.1 -->and its Devpack (needed for compiling RubyGems). The course requirements (Ruby 1.9.3 , Rails 3.2.16 , and Heroku 3.6) were then baked in for flavor. That's all folks!<span class="operator"> " }</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;SaasPuppy is by no measure a new distribution. The course software requirements are minimal. The base image is currently Precise Puppy 5.7.1 and its Devpack (needed for compiling RubyGems). The course requirements (Ruby 1.9.3 , Rails 3.2.16 , and Heroku 3.6) were then baked in for flavor. That's all folks!<span class="operator"> " }</span>
     </p>
 
 <p>&nbsp;</p>
@@ -54,16 +54,21 @@
     <h4 class="version-h4">v0.1:</h5>
 
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;This version of SaasPuppy features a full graphical desktop environment (currently <a href="http://joewing.net/projects/jwm/">JWM</a>) and includes everything required to complete the <a href="https://www.edx.org/course/uc-berkeleyx/uc-berkeleyx-cs169-1x-engineering-1377">edX CS169</a> course; as will all future versions. This initial version additionally includes countless everyday applications you'd expect in an OS (web browsers , text editors , media players , word processor , image editor , screen capture/recording , and much more). Many of these non-essentials may be removed in the future in order to further reduce the download size; but for now you get the "Full Monte". For compatibility with the course VM image, it is based on Raring<!-- v0.2 Precise -->Puppy Linux; which is a minified (puppified) version of Ubuntu Precise 12.04 with full access to the Ubuntu repositories so you can add any other packages that you may desire (Firefox , Skype , whatever).
+      &nbsp;&nbsp;&nbsp;&nbsp;This version of SaasPuppy features a full graphical desktop environment (currently <a href="http://joewing.net/projects/jwm/">JWM</a>) and includes everything required to complete the <a href="https://www.edx.org/course/uc-berkeleyx/uc-berkeleyx-cs169-1x-engineering-1377">edX CS169</a> course; as will all future versions. This initial version additionally includes countless everyday applications you'd expect in an OS (web browsers , text editors , media players , word processor , image editor , screen capture/recording , and much more). Many of these non-essentials may be removed in the future in order to further reduce the download size; but for now you get the "Full Monte". For compatibility with the course VM image, it is based on Precise Puppy Linux; which is a minified (puppified) version of Ubuntu Precise 12.04 with full access to the Ubuntu repositories so you can add any other packages that you may desire (Firefox , Skype , whatever).
     </p>
 
     <p>The packages that have been added to the base image are:
       <ul>
         <li>ruby 1.9.3</li>
+        <li>lxterminal 0.1.11</li>
+        <li>nano 2.2.6-1</li>
+      </ul>
+    </p>
+
+    <p>The gems that have been added to the base image are:
+      <ul>
         <li>rails 3.2.16</li>
         <li>heroku 3.6</li>
-        <li>lxterminal 0.1.11</li> <!-- n/a v0.2 -->
-        <li>nano 2.2.6</li>
       </ul>
     </p>
 
@@ -75,23 +80,22 @@
 
     <p>Other modifications:
       <ul>
-        <li>Updated Puppy and Ubuntu repository indices</li>
-        <li>Updated ca-certificates (for github)</li>
+        <li>Updated Puppy and Ubuntu package repository indices</li>
+        <li>Updated ca-certificates (for GitHub access)</li>
         <li>Cloned rottenpotatoes course project skeleton</li>
-        <li>Changed desktop color scheme to dark theme</li> <!-- n/a v0.2 -->
-<!-- v0.2
-        <li>customized terminal color scheme to gray on black</li>
-        <li>customized colored bash prompt with git branch status</li>
--->
+        <li>Customized colored bash prompt with git branch status</li>
+        <li>Redirected urxvt desktop link to lxterminal</li>
+        <li>Reduced number of virtual desktops to one and removed pager from taskbar</li>
+        <li>Added taskbar quick-launcher buttons for rox , geany , lxterminal , and seamonkey</li>
       </ul>
     </p>
 
-    <p>DISCLAIMER: This is an initial evaluation version and should be considered private beta for now; intended only for short-term educational use by students of the <a href="https://www.edx.org/course/uc-berkeleyx/uc-berkeleyx-cs169-1x-engineering-1377">edX CS169</a> course. SaasPuppy carries the same copyright (<a href="http://bkhome.org/bkauler/">Barry Kauler</a>) and <a href="http://puppylinux.org/wikka/License">licensing terms</a> (<a href="http://www.gnu.org/licenses/lgpl-3.0.txt">LGPL</a>) as <a href="http://puppylinux.org/wikka/Raring?redirect=no">Raring Puppy 3.9.9.2</a><!-- v0.2 <a href="http://puppylinux.org/wikka/PuppyPrecise?redirect=no">Precise Puppy 5.7.1</a> v0.2 -->; as only <a href="http://www.ubuntu.com">Ubuntu</a> debs and <a href="https://rubygems.org/">RubyGems</a> gems have been added to the base PuppyLinux distribution.
+    <p>DISCLAIMER: This is an initial evaluation version and should be considered private beta for now; intended only for short-term educational use by students of the <a href="https://www.edx.org/course/uc-berkeleyx/uc-berkeleyx-cs169-1x-engineering-1377">edX CS169</a> course. SaasPuppy carries the same copyright (<a href="http://bkhome.org/bkauler/">Barry Kauler</a>) and <a href="http://puppylinux.org/wikka/License">licensing terms</a> (<a href="http://www.gnu.org/licenses/lgpl-3.0.txt">LGPL</a>) as <a href="http://puppylinux.org/wikka/PuppyPrecise?redirect=no">Precise Puppy 5.7.1</a>; as only <a href="http://www.ubuntu.com">Ubuntu</a> debs and <a href="https://rubygems.org/">RubyGems</a> gems have been added to the base PuppyLinux distribution.
 
 This version contains some proprietary binary software (such as
 <img id="flash-img" src="http://blog.vivisectingmedia.com/wp-content/uploads/2007/10/rune_flash.gif" alt=" (image: http://blog.vivisectingmedia.com/wp-content/uploads/2007/10/rune_flash.gif) "><a href="http://www.adobe.com/">Adobe Flash Player</a>) which will be removed from SaasPuppy soon along with other non-essentials. Of course, students may always add back anything that is desired; but the primary goal is to make this development environment as small as possible and simple to use.
 
-      As with any free software; no warranty is expressed nor implied; and you use at your own risk. That being said, PuppyLinux has been around since 2005 and is consistently among the top 10 GNU+Linux distributions according to distrowatch.com. PuppyLinux is super fast and responsive; and is known to run well on PC's as slow as 0.6 GHz and with as little as 256MB RAM.
+      As with any free software; no warranty is expressed nor implied; and you use at your own risk. That being said, PuppyLinux has been around since 2005 and is consistently among the top 10 GNU+Linux distributions according to distrowatch.com. PuppyLinux is super fast and responsive; and is known to run smoothly on PC's as slow as 0.6 GHz and with as little as 256MB RAM.
     </p>
     <p>
       If you encounter any problems running or installing SaasPuppy or if you have any comments or suggestions for improvements; please don't hesitate to post them to the project <a href="https://github.com/saas-puppy/saas-puppy/issues">issue tracker</a> on github.<span class="operator"> " }</span>
@@ -169,11 +173,11 @@ This version contains some proprietary binary software (such as
   var TorrentA       = document.getElementById('torrent-a') ;
   var DirectA        = document.getElementById('direct-a') ;
   var Md5SumA        = document.getElementById('md5sum-a') ;
+
   TorrentA.href      =              TORRENT_FILE ;
   TorrentA.innerHTML =              TORRENT_FILE ;
   DirectA.href       = DIRECT_URL + ISO_FILE ;
   DirectA.innerHTML  =              ISO_FILE ;
-//  Md5SumA.href       = DIRECT_URL + MD5SUM_FILE ;
   Md5SumA.href       =              MD5SUM_FILE ;
   Md5SumA.innerHTML  =              MD5SUM_FILE ;
 

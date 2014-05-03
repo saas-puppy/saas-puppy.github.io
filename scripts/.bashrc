@@ -8,6 +8,8 @@
 #export HISTCONTROL=ignoredups
 #...v2.13 removed.
 
+# begin saas-puppy v0.2
+
 # prompt
 function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
@@ -27,6 +29,3 @@ alias la='ls -a --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-
-# paths
-export PATH="/usr/local/heroku/bin:$PATH"

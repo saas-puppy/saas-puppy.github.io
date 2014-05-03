@@ -1,0 +1,29 @@
+<JWM>
+	<Tray  autohide="false" insert="right" x="0" y="-1" border="1" height="28" >
+		<!-- Additional TrayButton attribute: label -->
+		<TrayButton label="Menu" icon="mini-dog.xpm">root:3</TrayButton>
+		<TrayButton popup="File Manager" icon="/usr/local/lib/X11/pixmaps/home24.png" border="false">exec:rox</TrayButton>
+		<TrayButton popup="Terminal" icon="/usr/local/lib/X11/pixmaps/console24.png" border="false">exec:lxterminal</TrayButton>
+		<TrayButton popup="Text Editor" icon="/usr/local/lib/X11/pixmaps/edit24.png" border="false">exec:geany</TrayButton>
+		<TrayButton popup="Web Browser" icon="/usr/local/lib/X11/pixmaps/www24.png" border="false">exec:seamonkey</TrayButton>
+		<TaskList/>
+		<Dock/>
+		<!-- Additional Swallow attribute: height -->
+	<!--	<Swallow name="blinky">
+			blinkydelayed -bg "#DCDAD5"
+		</Swallow> -->
+	<!--	<Swallow name="xtmix-launcher">
+			xtmix -launch
+		</Swallow> -->
+	<!--	<Swallow name="asapm">
+			asapmshell -u 4
+		</Swallow> -->
+	<!--	<Swallow name="freememapplet" width="34">
+			freememappletshell
+		</Swallow> -->
+		<Swallow name="xload" width="32">
+			xload -nolabel -bg "#888888" -fg red -hl white
+		</Swallow>
+		<Clock format="%H:%M">minixcal</Clock>
+	</Tray>
+</JWM>
