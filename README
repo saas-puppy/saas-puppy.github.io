@@ -14,9 +14,6 @@ contents:
 ./md5sum.txt
   => md5 checksum of the LiveCD image
 
-./nav.html
-  => navigation partial
-
 ./README
   => this file
 
@@ -26,6 +23,13 @@ contents:
 ./saas-puppy-0.1.iso (n/a in github repo)
   => LiveCD image derrived from raring-3.9.9.2-SCSI.iso
        http://puppylinux.org/wikka/raring
+
+./saas-puppy_0.2.iso.torrent
+  => bittorrent seed for LiveCD image
+
+./saas-puppy_0.2.iso (n/a in github repo)
+  => LiveCD image derrived from precise-5.7.1.iso
+       http://puppylinux.org/wikka/PuppyPrecise
 
 ./saas-puppy-logo.png
   => logo graphic

@@ -71,17 +71,21 @@ quick-launch buttons added to taskbar:
   lxterminal
   seamonkey
 
-reduced number of virtual desktops to one and removed pager from taskbar
-added customizations to .bashrc (prompt , aliases , default editor)
-add custom launch script for rxvt /usr/bin/rxvt (invert colors) # TODO: may not be necessary - same changes also made via GUI - were they preserved?
+other:
+  reduced number of virtual desktops to one and removed pager from taskbar
+  customized colored bash prompt with git branch status , aliases , default editor
+  updated Puppy and Ubuntu package repository indices<
+  cloned rottenpotatoes course project skeleton
+  reassigned urxvt desktop link to lxterminal
+  reduced number of virtual desktops to one and removed pager from taskbar
 
 NOTES
 
 
 : <<'TODO'
 
-* get lxterminal to use customizations in .bashrc
-* globicons entry for lxtermial does not seem sufficient
+* get lxterminal to use customizations in .bashrc (issue #1)
+* globicons entry for lxtermial does not seem sufficient (issue #2)
 * unetbootin on linux installed incorrect boot entry pmedia=usbflash
   => edit UNetBootIn grub entry to pmedia=atahd or pmedia=cd
 * script fetch and install of deb packages
