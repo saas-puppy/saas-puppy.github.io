@@ -54,6 +54,3 @@ contents:
 
 ./scripts/remaster.sh
   => recipe from base PrecisePuppy image to SaasPuppy
-
-./scripts/rxvt
-  => overrides urxvt terminal default color scheme kludgedly (never used)

@@ -64,7 +64,7 @@
     <h4 class="version-h4">v0.2:</h5>
 
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;This version of SaasPuppy features a full graphical desktop environment (currently <a href="http://joewing.net/projects/jwm/">JWM</a>) and includes everything required to complete the <a href="https://www.edx.org/course/uc-berkeleyx/uc-berkeleyx-cs169-1x-engineering-1377">edX CS169</a> course; as will all future versions. This initial version additionally includes countless everyday applications you'd expect in an OS (web browsers , text editors , media players , word processor , image editor , screen capture/recording , and much more). Many of these non-essentials may be removed in the future in order to further reduce the download size; but for now you get the "Full Monte". For compatibility with the course VM image, it is based on Precise Puppy Linux; which is a minified (puppified) version of Ubuntu Precise 12.04 with full access to the Ubuntu repositories so you can add any other packages that you may desire (Firefox , Skype , whatever).
+      &nbsp;&nbsp;&nbsp;&nbsp;SaasPuppy features a full graphical desktop environment (currently <a href="http://joewing.net/projects/jwm/">JWM</a>) and includes everything required to complete the <a href="https://www.edx.org/course/uc-berkeleyx/uc-berkeleyx-cs169-1x-engineering-1377">edX CS169</a> course; as will all future versions. This initial version additionally includes countless everyday applications you'd expect in a desktop OS (web browsers , text editors , media players , word processor , image editor , screen capture/recording , and much more). Many of these non-essentials may be removed in the future in order to further reduce the download size; but for now you get the "Full Monte". For compatibility with the course VM image, it is based on Precise Puppy ; which is a minified (puppified) version of Ubuntu Precise 12.04 with full access to the Ubuntu repositories; so you can add any other packages that you may desire (Firefox , Skype , whatever) with just a few clicks.
     </p>
 
     <p>The packages that have been added to the base image are:
@@ -186,14 +186,14 @@ This version contains some proprietary binary software (such as
 
 <script type="text/javascript">
 
-  var DIRECT_URL    = "http://puppyisos.org/isos/saas-puppy/" ;
-  var ISO_FILE      = "saas-puppy_0.2.iso" ;
-  var TORRENT_FILE  = ISO_FILE + ".torrent" ;
-  var MD5SUM_FILE   = "md5sum.txt" ;
+  var DIRECT_URL   = "http://puppyisos.org/isos/saas-puppy/" ;
+  var ISO_FILE     = "saas-puppy_0.2.iso" ;
+  var TORRENT_FILE = ISO_FILE + ".torrent" ;
+  var MD5SUM_FILE  = "md5sum.txt" ;
 
-  var TorrentA       = document.getElementById('torrent-a') ;
-  var DirectA        = document.getElementById('direct-a') ;
-  var Md5SumA        = document.getElementById('md5sum-a') ;
+  var TorrentA = document.getElementById('torrent-a') ;
+  var DirectA  = document.getElementById('direct-a') ;
+  var Md5SumA  = document.getElementById('md5sum-a') ;
 
   TorrentA.href      =              TORRENT_FILE ;
   TorrentA.innerHTML =              TORRENT_FILE ;
